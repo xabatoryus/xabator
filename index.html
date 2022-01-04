@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Портфолио Junior верстальщика</title>
-	<link href="style.css" rel="stylesheet">
-  </head>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			    <title>Портфолио Junior верстальщика</title>
+			<!— Google Font —>
+		<link
+		href="style.css"
+		rel="stylesheet"
+		/>
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="tabs">
+				<h3 class="active">Резюме</h3>
+				<h3>Умения </h3>
+				<h3>Хобби</h3>
+				<h3>Контакты<h3>
+			</div>
+			<div class="tab-content">
+				<!— First —>
+				<div class="active">
+				<h4>Юсупов Сарваржон Шухратжонович</h4>
+				<p>
+				Я начинающий программист изучил основы в html и Css 
+				работал препадователь по робототехнике
+				преподовал пайтон и так же робототехнику 
+				
+				</p>
+			</div>
+				<!— Second —>
+				<div>
+					<h4>Умения</h4>
+					<p>
+					<tabel for= "file"> HTML</tabel>
+					<progress value=100 max = 100>
+					
+					</progress>  100% <br>
+					<tabel for= "file"> CSS</tabel>
+					<progress value=100 max = 100>
+					
+					</progress>  100% <br>
+					<tabel for= "file"> JS </tabel>
+					<progress value=22 max = 100>
+					
+					</progress>  22%<br>
+					<tabel for= "file"> Python</tabel>
+					<progress value=32 max = 100>
+					
+					</progress>  32%
+					</p>
+				</div>
+				<!— Third —>
+					<div>
+						<h4>Хобби</h4>
+						<p>
+						Робототехника, Баскетбол, историческое фехтования
+						
+						</p>
+					</div>
+						<!— Fourth —>
+					<div>
+						<h4>Контакты </h4>
+						<p>
+							email: saren994@gmail.com <br>
+							Vk: vk.com\yussar <br>
+							instagram: yus_sar 
+						</p>
+					</div>
+			</div>
+		</div>
+			<script>
+				let tabs = document.querySelectorAll(".tabs h3");
+				let tabContents = document.querySelectorAll(".tab-content div");
 
-  <body>
-   <h1>hello World</h1>
-  </body>
+				tabs.forEach((tab, index) => {
+				tab.addEventListener("click", () => {
+				tabContents.forEach((content) => {
+				content.classList.remove("active");
+				});
+					tabs.forEach((tab) => {
+					tab.classList.remove("active");
+				});
+				tabContents[index].classList.add("active");
+				tabs[index].classList.add("active");
+				});
+				});
+
+			</script>
+
+	</body>
 </html>
