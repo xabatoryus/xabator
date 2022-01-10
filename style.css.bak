@@ -6,7 +6,7 @@
 	-webkit-tap-highlight-color: transparent ;
 }
 body {
-	background-color: green;
+	background-color: red;
 }
 .wrapper {
 	width: 95vmin;
@@ -62,7 +62,7 @@ h3 {
 	display: block;
 }
 .tabs .active {
-	background-color: red;
+	background-color: green;
 	color: #4d5bf9;
 }
 
